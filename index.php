@@ -31,23 +31,18 @@
 </head>
 <body class="text-center">
     <main class="form-signin">
-      <form>
+      <form method="post" action="logar.php">
         <img class="mb-4" src="img/curso-online.png" alt="" width="72" height="57">
         <h1 class="h3 mb-3 fw-normal">Por favor, faça seu login</h1>
         <div class="form-floating">
-          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <input name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
           <label for="floatingInput">Email</label>
         </div>
         <div class="form-floating">
-          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <input name="senha" type="password" class="form-control" id="floatingPassword" placeholder="Password">
           <label for="floatingPassword">Senha</label>
         </div>
-        <div class="checkbox mb-3">
-          <label>
-            <input type="checkbox" value="remember-me"> Salvar minha senha
-          </label>
-        </div>
-        <button class="w-100 btn btn-lg btn-primary" type="submit">Acessar</button>
+        <button name="acessar" class="w-100 btn btn-lg btn-primary" type="submit">Acessar</button>
         <p class="mt-5 mb-3 text-muted">&copy; IFPR Umuarama - TecWeb 2024</p>
       </form>
     </main>
